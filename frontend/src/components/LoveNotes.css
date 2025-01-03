@@ -1,0 +1,52 @@
+.love-notes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.message-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.message-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.message-input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    outline: none;
+}
+
+.send-button {
+    background-color: #f8b500;
+}
+
+@media (max-width: 768px) {
+    .lovenote-container {
+        padding: 15px;
+    }
+
+    .lovenote-container h2 {
+        font-size: 2rem;
+    }
+
+    .lovenote-container p {
+        font-size: 1rem;
+    }
+}
