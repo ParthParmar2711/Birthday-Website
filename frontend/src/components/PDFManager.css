@@ -1,0 +1,146 @@
+.pdf-manager {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 1490px;
+    height: 570px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dbd0d0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 600px;
+}
+
+.pdf-viewer h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.pdf-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdf-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-item a {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.pdf-item a:hover {
+    color: #0056b3;
+}
+
+.pdf-item button {
+    background-color: #ff5c5c;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-item button:hover {
+    background-color: #cc4949;
+}
+
+
+@media (max-width: 768px) {
+    .pdf-manager {
+        padding: 10px;
+    }
+
+    .pdf-grid {
+        grid-template-columns: 1fr;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .pdf-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

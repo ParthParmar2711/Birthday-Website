@@ -1,0 +1,128 @@
+.love-notes {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+    height: 600px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+}
+
+.message-list {
+    overflow-y: auto;
+    margin-bottom: 20px;
+    max-height: 700px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    margin: 5px 0;
+    animation: fadeIn 0.5s ease-in-out;
+    color: #343a40;
+    font-size: 1rem;
+}
+
+
+.message-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.message-input {
+    width: 60%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #c8c2c2;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    outline: none;
+    font-size: 1rem;
+}
+
+.send-button {
+    background-color: #f8b500;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #f39c12;
+}
+
+@media (max-width: 1024px) {
+    .love-notes {
+        padding: 20px 15px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .message-input {
+        width: 55%;
+    }
+
+    .send-button {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .love-notes {
+        height: auto;
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .message-list {
+        max-height: 250px;
+    }
+
+    .message-input {
+        width: 65%;
+        font-size: 1rem;
+    }
+
+    .send-button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .love-notes {
+        padding: 15px 10px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+
+    }
+
+    .message-input {
+        width: 80%;
+    }
+
+    .send-button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}

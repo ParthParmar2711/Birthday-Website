@@ -1,0 +1,199 @@
+
+.timeline-container {
+    max-width: 1530px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #e3e6e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+    box-sizing: border-box;
+}
+
+.timeline-container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 40px;
+}
+
+.timeline-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.timeline-form input,
+.timeline-form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #858b91;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.timeline-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.timeline-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-form button:hover {
+    background-color: #0056b3;
+}
+
+.timeline-events {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-event {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-event:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-event h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.timeline-event p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.timeline-event small {
+    display: block;
+    font-size: 0.9rem;
+    color: #495057;
+    margin-top: 10px;
+}
+
+.timeline-event button {
+    margin-top: 15px;
+    position: relative;
+    right: 12px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-event button:hover {
+    background-color: #c82333;
+}
+
+.timeline-event button:active {
+    transform: scale(0.95);
+}
+
+.date {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+@media (max-width: 1024px) {
+    .timeline-container {
+        padding: 15px;
+    }
+
+    .timeline-form button {
+        font-size: 0.9rem;
+    }
+
+    .timeline-event h3 {
+        font-size: 1.25rem;
+    }
+
+    .timeline-event p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-container {
+        padding: 15px;
+    }
+
+    .timeline-form button {
+        font-size: 0.85rem;
+        padding: 10px 18px;
+    }
+
+    .timeline-event h3 {
+        font-size: 1.1rem;
+    }
+
+    .timeline-event p {
+        font-size: 0.9rem;
+    }
+
+    .timeline-event button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .timeline-events {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-container {
+        padding: 10px;
+    }
+
+    .timeline-form input,
+    .timeline-form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .timeline-form button {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+    }
+
+    .timeline-event h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-event p {
+        font-size: 0.85rem;
+    }
+
+    .timeline-event button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+}
